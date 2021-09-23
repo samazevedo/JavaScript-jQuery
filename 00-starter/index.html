@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Syntax</title>
+</head>
+<body>
+    <h1>JQuery Syntax</h1>
+    <p>Here is paragraph</p>
+    <p>Here is another paragraph</p>
+    <p>Here is one more paragraph</p>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <h2><a href="#" class="click-here">click here</a></h2>
+
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script>
+        jQuery('h1').css('color', '#bdbdbd')
+        $('p').css('color', 'red')
+        $('a').click(function(e){
+            e.preventDefault()
+            console.log($(this).html())
+        })
+        $('a').click(function() {
+            alert(`you clicked the buttom ${this.innerHTML}`)
+        })
+    </script>
+</body>
+</html>

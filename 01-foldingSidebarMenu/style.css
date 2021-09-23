@@ -1,0 +1,17 @@
+main {
+    display: flex;
+}
+aside {
+    flex: 1;
+    order: 1;
+}
+article {
+    flex: 2;
+    order: 2;
+}
+.hide-menu {
+    display: none;
+}
+.show-menu {
+    display: block;
+}
