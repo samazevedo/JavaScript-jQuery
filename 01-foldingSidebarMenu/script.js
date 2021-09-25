@@ -1,4 +1,4 @@
-const submenus = document.querySelectorAll('ul li ul')
+const submenus = $('ul li ul').css('d')
 const menu = document.querySelectorAll('.menulink')
 
 // for (let i = 0; i < submenus.length; i++) {
